@@ -24,6 +24,7 @@ class typog {
     //Delete string in the current div
     del(val, offset = 0) {
       return new Promise((resolve, reject) => {
+        val = document.getElementById(this.id).textContent;
         if (offset < val.length) {
           val = val.substring(0, val.length - 1);
           document.getElementById(this.id).innerHTML = val;
@@ -45,9 +46,9 @@ class typog {
             arr = val;
             val = val[i];
         }
-        this.write(val).then((key) => {
+        this.write(val).then(() => {
             setTimeout(() => {
-                this.del(key).then(() => {
+                this.del().then(() => {
                     setTimeout(() => {
                         if(arr != undefined){val = arr}
                         this.infinite(val, to, i + 1);
