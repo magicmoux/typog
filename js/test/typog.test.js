@@ -3,6 +3,13 @@ class typog {
       this.id = id, this.speed = speed;
       window.addEventListener("blur", () => {window.stop();})
     }
+    //Wait function
+    wait(ms) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {resolve(true)}, ms)
+      })
+    }
+
     //Write a string
     write(val, offset = 0) {
       return new Promise((resolve, reject) => {
@@ -16,6 +23,7 @@ class typog {
         }, this.speed * val.length);
       });
     }
+
     //Delete textcontent of defined element
     del(stopOffset, val, offset = 0) {
       return new Promise((resolve, reject) => {
@@ -34,6 +42,7 @@ class typog {
         }, 100);
       });
     }
+
     //Ininite writing
     infinite(val, to = 1500, i = 0) {
         let arr;
