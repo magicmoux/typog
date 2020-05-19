@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 ```js 
 writer.wait(1500).then(() => {console.log("GG")});
 ```
- ![enter image description here](https://media.discordapp.net/attachments/709086749082779648/712309215120850984/waitms.gif)
+ ![Wait function example](https://media.discordapp.net/attachments/709086749082779648/712309215120850984/waitms.gif)
 
 
 > # .write(string)
@@ -32,17 +32,18 @@ writer.wait(1500).then(() => {console.log("GG")});
 ```js 
 writer.write("Typog.js");
 ```
- ![enter image description here](https://media.discordapp.net/attachments/709086749082779648/712095455860752464/write.gif)
+ ![Write function example](https://media.discordapp.net/attachments/709086749082779648/712095455860752464/write.gif)
 
 
 
-> # .del()
+> # .del(chars)
 > This function deletes the text content of the element you have defined.
 ```js 
-writer.del(); //No arguments needed
+writer.del(); //Without arguments, the entire string will be removed.
+writer.del(7) //Only 7 characters will be removed
 ```
-![enter image description here](https://media.discordapp.net/attachments/709086749082779648/712097352948645980/del.gif)
-
+![Del function without args example](https://media.discordapp.net/attachments/709086749082779648/712097352948645980/del.gif)
+![Del function with args example](https://media.discordapp.net/attachments/709086749082779648/712310183409221722/delnum.gif)
 
 
 > # .infinite(string, timeout)
@@ -50,7 +51,7 @@ writer.del(); //No arguments needed
 ```js
 writer.infinite("Ahr ma boi I need donut! 🍩");
 ```
-![enter image description here](https://media.discordapp.net/attachments/709086749082779648/712098913720467486/infinitestring.gif)
+![Infinite function with string arg example](https://media.discordapp.net/attachments/709086749082779648/712098913720467486/infinitestring.gif)
 
 
 
@@ -63,4 +64,4 @@ writer.infinite([
 	"nUmBeR tHrEe"
 ]);
 ```
-![enter image description here](https://media.discordapp.net/attachments/709086749082779648/712100266689691729/infinitearray.gif)
+![Infinite function with array arg example](https://media.discordapp.net/attachments/709086749082779648/712100266689691729/infinitearray.gif)
