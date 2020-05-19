@@ -5,7 +5,7 @@ A library for a javascript typewriter ⌨️
 ## How to use Typog.js
 First of all, integrate Typog.js into your site via this html code
 ```html
-<script src="https://cozax.github.io/typog/js/typog.js"></script>
+<script src="https://cozax.github.io/typog/js/stable/typog.js"></script>
 ```
 Next, here is a code template in order to configure typog.js
 ```js
