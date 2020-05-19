@@ -167,3 +167,22 @@
   border-radius: 8px;
 }
 
+/* + additional style */
+#brand {
+  color: rgb(245,245,245);
+  font-family: Allerta, sans-serif;
+  padding: 30px; 
+}
+code {
+  color: rgb(248,247,247);
+  font-size: 15px;
+  padding: 30px;
+  background-color: #3a3a3a;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px){
+  code {
+    width: 80%;
+  }
+}
