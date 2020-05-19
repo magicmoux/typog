@@ -19,6 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ## Available functions
 
+> # .wait(ms)
+> This function can be used instead of setTimeout.
+```js 
+writer.wait(1500).then(() => {console.log("GG")});
+```
+ ![enter image description here](https://media.discordapp.net/attachments/709086749082779648/712309215120850984/waitms.gif)
+
+
 > # .write(string)
 > This function is used to write a string that will be visible via the element you have defined
 ```js 
