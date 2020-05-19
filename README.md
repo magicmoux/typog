@@ -1,6 +1,8 @@
 # Typog.js
 A library for a javascript typewriter ⌨️
 
+** **
+
 ## How to use Typog.js
 First of all, integrate Typog.js into your site via this html code
 ```html
@@ -25,6 +27,7 @@ writer.write("Typog.js");
 ```
  ![enter image description here](https://media.discordapp.net/attachments/709086749082779648/712095455860752464/write.gif)
 
+** **
 
 > # .del()
 > This function deletes the text content of the element you have defined.
@@ -33,12 +36,16 @@ writer.del(); //No arguments needed
 ```
 ![enter image description here](https://media.discordapp.net/attachments/709086749082779648/712097352948645980/del.gif)
 
+** **
+
 > # .infinite(string, timeout)
 > Writes and deletes a user-defined string. The timeout is set to 1500ms by default, and can be changed. The timeout argument is completely optional 
 ```js
 writer.infinite("Ahr ma boi I need donut! 🍩");
 ```
 ![enter image description here](https://media.discordapp.net/attachments/709086749082779648/712098913720467486/infinitestring.gif)
+
+** **
 
 > # .infinite(array, timeout)
 > Writes and deletes a user-defined array of strings. The timeout is set to 1500ms by default, and can be changed. The timeout argument is completely optional 
